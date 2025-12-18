@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>My Personal Website</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="banner" id="top">
+
+  <div class="page-buttons">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="academics.html">ACADEMICS</a>
+      <a href="skills.html">SKILLS</a>
+      <a href="highlights.html">HIGHLIGHTS</a>
+      <a href="interest.html">INTERESTS</a>
+      <a href="family.html">FAMILY</a>
+      <a href="gallery.html">GALLERY</a>
+  </div>
+
+  <div class="content-box">
+
+    <h1 class="page-title">MY INTERESTS</h1>
+
+  
+    <div class="section hobbies">
+      <h2>My Hobbies &#128214;</h2>
+      <div class="hobby-grid">
+        <div class="hobby-card">
+          <img src="book2.jpg" alt="Reading">
+          <h3>Reading</h3>
+          <p>I enjoy reading anything, especially books that inspire me.</p>
+        </div>
+
+        <div class="hobby-card">
+          <img src="art.jpg" alt="Drawing">
+          <h3>Drawing</h3>
+          <p>I mostly draw whatever I feel like sketching at the moment and this is a glimpse of my sketch because i do not show it to anyone usually.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section food">
+      <h2>Favorite Food &#127869;</h2>
+      <div class="food-grid">
+        <div class="food-card">
+          <img src="nasilem.jpg" alt="Nasi Lemak">
+          <h3>Nasi Lemak</h3>
+          <p>This is my all-time favorite food with ayam goreng.</p>
+        </div>
+
+        <div class="food-card">
+          <img src="cookies.jpg" alt="Cookies">
+          <h3>Ben's Cookies</h3>
+          <p>I love cookies as much as I love my life and my personal favourite is the red velvet with macadamia nuts.</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="section music">
+      <h2>Music &#127925;</h2>
+      <div class="music-grid">
+        <div class="music-card">
+          <h3>Could You Be My Moon – Aquariyaz</h3>
+          <audio controls>
+            <source src="could you be my moon.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <p>This song is about longing for isolation but seeking light in the darkness. Beautiful instrumental.</p>
+        </div>
+
+        <div class="music-card">
+          <h3>Amygdala – Agust D</h3>
+          <audio controls>
+            <source src="amygdala.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <p>This song explores the emotional storage in our brain and carries a meaningful message.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<h1 class="page-title">EXPLANATORY</h1>
+
+<div class="text-wrap">
+  <img src="book2.jpg" alt="Reading" class="wrap-left">
+  <p>
+    Reading has always been one of my favorite hobbies. I enjoy diving into
+    fantasy novels, learning new things, and exploring different worlds
+    through books. Whenever I have free time, I like to sit by the window
+    with a cup of tea and immerse myself in a good story.
+  </p>
+</div>
+
+<div class="text-wrap">
+  <img src="art.jpg" alt="Reading" class="wrap-left">
+  <p>This is an unfinished drawing of mine because i do not have enough time for it. However, this helps me relaxed my mind every single time so i will come back on this and draw few strokes each time.</p>
+</div>
+
+
+<a href="#top" class="back-to-top">Back to Top</a> 
+
+<p>
+
+<script>
+  // Optional: pause other audios when one is playing
+  const audios = document.querySelectorAll('audio');
+  audios.forEach(audio => {
+    audio.addEventListener('play', () => {
+      audios.forEach(a => {
+        if(a !== audio) a.pause();
+      });
+    });
+  });
+</script>
+
+<footer>
+  <p>
+    © This website is created for IML254 subject and educational purposes only.
+    Nur Itqan Khadijah, 2025. All rights reserved.
+  </p>
+</footer>
+
+</body>
+</html>
